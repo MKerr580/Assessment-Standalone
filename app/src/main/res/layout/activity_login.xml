@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.cityofglasgowcollege.assessment3app.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="502dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/usernametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/logintxt"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/passwordtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/loginpass"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLogin"
+            android:text="@string/loginbut"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="142dp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRegister"
+            android:text="@string/registermainpage"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="142dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
